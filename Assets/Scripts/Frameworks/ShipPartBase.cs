@@ -1,7 +1,5 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
-using UnityEngine;
 
 namespace Frameworks
 {
@@ -12,7 +10,7 @@ namespace Frameworks
     public class ShipPartBase
     {
         public static ShipPartBase Instance { get; } = new();
-        [SuppressMessage("ReSharper", "InconsistentNaming")] public string ID; // ID of the part. Should be formatted as <PartType><ID>
+        public string ID; // ID of the part. Should be formatted as <PartType><ID>
         public string DisplayName; // The name of this item, as it will appear in the game.
         public string Description; // A description of this item, as it will appear in the game.
         public float Weight; // Weight in tonnes

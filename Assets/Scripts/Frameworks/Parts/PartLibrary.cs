@@ -3,9 +3,9 @@ using UnityEngine;
 
 namespace Frameworks
 {
-    public class PartLibrary
+    public abstract partial class PartLibrary
     {
-        public static FuelTank[] Tanks = {new()
+        public static readonly FuelTank[] Tanks = {new()
             {
                 Base = new ShipPartBase
                 {
@@ -14,7 +14,7 @@ namespace Frameworks
                     Cost = 100,
                     ID = "tanksmall",
                     Weight = 1.5f,
-                    Models = new List<Model>
+                    Models = new List<Model>()
                     {
                         new()
                         {
@@ -34,7 +34,7 @@ namespace Frameworks
                     Cost = 500,
                     ID = "tankmedium",
                     Weight = 2.7f,
-                    Models = new List<Model>
+                    Models = new List<Model>()
                     {
                         new()
                         {
@@ -48,7 +48,7 @@ namespace Frameworks
             }
         };
 
-        public static Engine[] Engines = { new()
+        public static readonly Engine[] Engines = { new()
             {
                 Base = new ShipPartBase
                 {
@@ -59,7 +59,7 @@ namespace Frameworks
                     ExecuteCoroutine = false,
                     ExecuteOnFrame = null,
                     Cost = 500,
-                    Models = new List<Model>
+                    Models = new List<Model>()
                     {
                         new()
                         {
@@ -82,7 +82,7 @@ namespace Frameworks
                     ExecuteCoroutine = false,
                     ExecuteOnFrame = null,
                     Cost = 800,
-                    Models = new List<Model>
+                    Models = new List<Model>()
                     {
                         new()
                         {
@@ -96,14 +96,14 @@ namespace Frameworks
             },
             new(){Base = new ShipPartBase
                 {
-                    ID = "mediumengine1",
+                    ID = "enginemedium1",
                     DisplayName = "ML-25",
                     Description = "A medium engine typically used to propel smaller rockets through the lower atmosphere. The ML-25 is the first engine to incorporate a gas generator system, allowing it to ingest more fuel at a faster rate into the combustion chamber ",
                     Weight = 1f,
                     ExecuteCoroutine = false,
                     ExecuteOnFrame = null,
                     Cost = 1000,
-                    Models = new List<Model>
+                    Models = new List<Model>()
                     {
                         new()
                         {
@@ -117,18 +117,18 @@ namespace Frameworks
             }
         };
 
-        public static Cockpit[] Cockpits = { new()
+        public static readonly Cockpit[] Cockpits = { new()
             {
                 Base = new ShipPartBase
                 {
-                    ID = "smallcockpit",
+                    ID = "cockpitsmall",
                     DisplayName = "Small cockpit",
                     Description = "A small cockpit",
                     Weight = 1f,
                     ExecuteCoroutine = false,
                     ExecuteOnFrame = null,
                     Cost = 800,
-                    Models = new List<Model>
+                    Models = new List<Model>()
                     {
                         new()
                         {
@@ -141,14 +141,14 @@ namespace Frameworks
             },
             new(){Base = new ShipPartBase
                 {
-                    ID = "mediumcockpit",
+                    ID = "cockpitmedium",
                     DisplayName = "Medium cockpit",
                     Description = "A medium cockpit",
                     Weight = 1.5f,
                     ExecuteCoroutine = false,
                     ExecuteOnFrame = null,
                     Cost = 1000,
-                    Models = new List<Model>
+                    Models = new List<Model>()
                     {
                         new()
                         {

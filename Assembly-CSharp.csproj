@@ -57,16 +57,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Frameworks\Rocket.cs" />
+    <Compile Include="Assets\Scripts\Frameworks\Parts\PartLibrary.cs" />
+    <Compile Include="Assets\Scripts\Frameworks\Parts\Defaults.cs" />
+    <Compile Include="Assets\Scripts\Frameworks\Parts\Funcs.cs" />
+    <Compile Include="Assets\Scripts\UI\DevRocket.cs" />
+    <Compile Include="Assets\Scripts\UI\FPS.cs" />
     <Compile Include="Assets\Scripts\Frameworks\Engine.cs" />
+    <Compile Include="Assets\Scripts\UI\MenuBuilder.cs" />
     <Compile Include="Assets\Scripts\Frameworks\ShipBase.cs" />
     <Compile Include="Assets\Scripts\Frameworks\Stage.cs" />
     <Compile Include="Assets\Scripts\Frameworks\ShipPartBase.cs" />
     <Compile Include="Assets\Scripts\Frameworks\Model.cs" />
     <Compile Include="Assets\Scripts\Frameworks\FuelTank.cs" />
     <Compile Include="Assets\Scripts\Frameworks\Cockpit.cs" />
-    <Compile Include="Assets\Scripts\Frameworks\PartLibrary.cs" />
-    <Compile Include="Assets\Scripts\UI\MenuBuilder.cs" />
-    <Compile Include="Assets\Scripts\UI\FPS.cs" />
+    <Compile Include="Assets\Scripts\Utilities\Arrays.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

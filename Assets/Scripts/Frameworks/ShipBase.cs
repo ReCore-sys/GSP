@@ -8,7 +8,7 @@ namespace Frameworks
     /// </summary>
     public class ShipBase
     {
-        public List<Stage> Stages;
+        public List<Stage> Stages = new();
         public Cockpit Cockpit;
     }
 }

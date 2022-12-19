@@ -5,7 +5,7 @@
     /// </summary>
     public class Stage
     {
-        public Engine Engine;
-        public FuelTank Tank;
+        public Engine Engine = new();
+        public FuelTank Tank = new();
     }
 }
